@@ -46,7 +46,7 @@ Los elementos digitales que aspiramos lograr son **gráficos, tablas de comparac
 Recopilamos la información de la cantidad de barberías que hay en las comunas San José de Maipo, Puente Alto y Estación Central.
 
 La base de datos la hiicmos de manera manual en una tabla de
-[Excel](https://uccl0-my.sharepoint.com/:x:/r/personal/ceciliavugarte_uc_cl/Documents/Base%20de%20datos%20Barber%C3%ADas.xlsx?d=w0c617692742f490b99b3c8d45a2e58b3&csf=1&web=1&e=M0NOef).
+[Excel](https://uccl0-my.sharepoint.com/:x:/g/personal/ceciliavugarte_uc_cl/EZJ2YQwvdAtJmbPI1FouWLMB2qq5ivX06sw0U2z2Y5BClw?e=PVnbeH).
 
 Para poder dar a entender de mejor forma nuestra propuesta, realizamos una presentación
 [presentación](https://www.canva.com/design/DAGPjGfWLZI/iCgMraf0IJBtk2obpCcyqg/edit?utm_content=DAGPjGfWLZI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
