@@ -22,6 +22,9 @@ El proceso de limpieza de datos se llevó a cabo siguiendo varios pasos clave:
 ## Fuentes de Datos Utilizadas
 - **Archivo CSV de empresas registradas en Chile:** Los datos fueron extraídos de un archivo CSV proveniente del Servicio de Impuestos Internos que contiene información relevante sobre empresas registradas en Chile, incluyendo nombre, dirección, y datos económicos.
 
+## Enlace a la fuente de datos
+- (https://www.sii.cl/sobre_el_sii/estadisticas_de_empresas.html) 
+
 ### Justificación de las Fuentes
 - **Fiabilidad:** El archivo CSV se obtuvo de una fuente confiable que recopila datos sobre negocios en la región.
 - **Relevancia:** La información es relevante para el análisis de la industria de barberías en Puente Alto, permitiendo evaluar su rendimiento y características.
@@ -30,3 +33,4 @@ El proceso de limpieza de datos se llevó a cabo siguiendo varios pasos clave:
 1. **¿Cuál es el promedio de ventas anuales por barbería en Puente Alto?**
 2. **¿Cómo ha evolucionado el número de barberías registradas en Puente Alto desde el inicio de las principales corrientes migratorias hacia Chile (2015-2020)?**
 3. **¿Qué proporción de las ventas anuales de las barberías en Puente Alto se ha incrementado desde el auge migratorio, y cómo se relaciona este crecimiento con la apertura de nuevos establecimientos?**
+
