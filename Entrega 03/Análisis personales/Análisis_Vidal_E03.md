@@ -1,0 +1,20 @@
+# Análisis Crítico personal Entrega 3
+Por Cecilia Vidal
+
+**1. Aprendizajes: ¿qué elementos y desafíos fueron los más importantes para crar el wirefra? ¿Qué herramienta utilizaron? ¿Cuáles fueron las características que más les gustaron de la herramienta?**
+
+Para establecer los usuarios a los que nos queremos dirigir analizamos el contenido que queremos entregar a la audiencia y la manera en que este será presentado. Comenzamos a presenciar distintas dificultades ante la delgada línea de mantener la seriedad, pero que al mismo tiempo sea didáctico y fácil de comprender. Finalmente, luego de pensar en muchos posibles personajes, decidimos que dada la densidad de nuestra información nos dirigiremos a una audiencia más interiorizada previamente en los tópicos a tratar. Ahora más enfocados en la Wiframe, comenzamos a analizar la jerarquización de la información y los colores y diseños para que así sea más comprensible. Incluso nosotros en un inicio estábamos complicados con comprender o redactar de buena forma nuestra hipótesis, por ende nos situamos en un público que busca entender estos temas fácilmente. La tipografía y colores son de acuerdo a nuestro trabajo, más serio y neutro, pero los colores tienen el toque relacionado con los pelos para así darnos un margen a la creatividad de ser necesario. En simples palabras considero que nuestro principal conflicto fue decidir cómo jerarquizar la información y de qué modo lo haremos fácil de comprender siendo que es un tema denso. Para poder plasmar nuestra conclusión final utilizamos Canvas por el hecho de que permite una libertad creativa, allí fuimos jugando con las distintas herramientas que esta misma ofrece para ver cómo se vería nuestra página y si es que sería comprensible. Así llegamos a nuestro Wiframe final.
+
+**2. Proyecciones: explica en detalle cómo planean integrar los elementos de la identidad visual en el wireframe. ¿Qué elementos de la identidad visual se pueden integrar en el wireframe de forma sencilla? ¿Qué elementos de la identidad visual serán desafiantes? ¿Por qué?**
+
+Los elementos visuales que creamos los integraremos de manera sutil en la Wiframe, pero siempre buscando que complementen y aporten en la comprensión de todo el contenido. La tipografía es un elemento visual sutil con el que buscamos atraer la atención del lector y delimitar las partes importantes de la redacción (negritas, cambiar a la tipografía de título y subrayado), además los colores también dirigirán la atención de la audiencia en lo relevante. 
+
+Considero que los elementos visuales más desafiantes que tendremos, o queremos tener, son gráficos didácticos que recopilen los datos que respondan o no nuestra hipótesis. El fin de los gráficos es que la información más densa este de forma didáctica y comprensible para así llegar a una audiencia que tal vez no está tan instruida en la información de forma previa, pero quiere comprender. Lo difícil de esto es la edición por detrás, ya que no se nos hace fácil integrar programación con reporteo.
+
+**3. Limitaciones: qué desafíos u obstáculos han identificado ya para constuir la webstory. ¿Cómo planean superarlos? ¿Qué elementos de la identidad visual podrían ser limitantes? ¿Por qué? ¿Qué estrategias proponen para superar tales limitaciones.**
+
+Para superar este desafío de condensar la información de manera creativa analizamos distintos medios que tratan estos temas de manera gráfica para inspirarnos. Además, en un futuro, planeamos consultar tanto a las profesoras cómo a YouTube o Internet cómo hacer los gráficos o si es que vamos. Bien encaminados con nuestra visión. Creo que otro desafío es narra de manera didáctica y comprensible, pero esto lo solucionaremos integrando bien la información y haciendo prototipos para ir analizando el fin de la redacción.
+
+Los elementos visuales que son limitantes creo que tenemos pocos, solo el elemento de los gráficos didácticos, pero este, cómo ya dije, tiene solución.
+
+En conclusión nuestros mayores desafíos serán el plasmar la información densa de manera atrapante al lector y utilizar herramientas visuales que nos ayuden en lograr nuestra misión.
