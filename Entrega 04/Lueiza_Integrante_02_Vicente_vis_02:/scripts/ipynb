@@ -1,0 +1,26 @@
+# Primero instala Altair y vega_datasets si no lo tienes instalado (puedes omitir esto si ya lo tienes)
+!pip install altair vega_datasets
+
+# Importamos las librerías necesarias
+import altair as alt
+import pandas as pd
+
+# Creamos el DataFrame con los datos proporcionados
+data = {
+    'Año': [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+    'Valor': [1826, 1980, 1381, 1575, 1996, 1931, 1584, 2066, 10626, 2298]
+}
+
+df = pd.DataFrame(data)
+
+# Creamos el gráfico de líneas con Altair
+chart = alt.Chart(df).mark_line().encode(
+    x='Año:O',  # Eje X: Año (categoría ordinal)
+    y='Valor:Q',  # Eje Y: Valor (cuantitativo)
+).properties(
+    title='Peluquerías y barberías registradas por año'  # Título del gráfico
+)
+
+# Mostrar el gráfico de forma interactiva en Google Colab
+chart
+
