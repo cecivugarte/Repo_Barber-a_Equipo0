@@ -1,86 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportaje: Barberías y Criminalidad en Santiago</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Times+New+Roman&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: #bab78c;
-            color: #686961;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        h1, h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #916b5e;
-        }
-        .visualization {
-            margin: 40px 0;
-        }
-        .visualization img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-        .visualization p {
-            text-align: justify;
-            margin-top: 20px;
-        }
-        #logo {
-            display: block;
-            margin: 0 auto 40px auto;
-            max-width: 200px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img id="logo" src="logo_barberías.png" alt="Logo Barberías">
-        <h1>Barberías y Criminalidad: Un Análisis del Crecimiento en Santiago</h1>
-    </header>
-    
-    <section class="visualization">
-        <h2>Cambios en Criminalidad en Comunas y Densidad Poblacional</h2>
-        <img src="criminalidad_comunas_densidad_poblacional.jpg" alt="Cambios en Criminalidad en Comunas y Densidad Poblacional">
-        <p>
-            El crecimiento de la criminalidad en las comunas de Santiago y su vínculo con factores económicos, como la apertura de nuevos negocios, se ha convertido en un tema de gran interés público. En este reportaje, nos sumergimos en cómo ha evolucionado el panorama de la criminalidad y qué impacto han tenido ciertos tipos de negocios, específicamente las barberías, en distintas áreas de la ciudad.
-        </p>
-        <p>
-            Comenzamos por examinar cómo han cambiado los casos policiales en las comunas y cómo se relaciona esto con la densidad poblacional. La visualización muestra una tendencia creciente en muchas de las comunas de Santiago, especialmente aquellas con mayor concentración de población. Esta relación no solo refleja el impacto de la expansión urbana, sino que también establece un contexto necesario para entender cómo otros factores, como el crecimiento económico, podrían estar influyendo.
-        </p>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reportaje: Barberías y Criminalidad en Santiago</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Times+New+Roman&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
 
-    <section class="visualization">
-        <h2>Crecimiento del Número de Barberías por Comuna (2019-2022) con Total General Destacado</h2>
-        <img src="crecimiento_barberias_2019_2022.png" alt="Crecimiento del Número de Barberías por Comuna (2019-2022) con Total General Destacado">
-        <p>
-            El sector de las barberías, en particular, ha tenido un crecimiento significativo en los últimos años. Presentamos una visualización del aumento en el número de barberías entre 2019 y 2022, donde se destaca claramente el crecimiento porcentual por comuna, así como una media general que ayuda a contextualizar dicho crecimiento. 
-        </p>
-        <p>
-            Al observar estas cifras, se percibe que comunas como Las Condes, Providencia y Santiago han registrado un aumento notable de barberías, lo cual podría estar relacionado con un cambio en las dinámicas culturales y una creciente demanda por servicios de cuidado personal. El análisis de estas tendencias nos invita a reflexionar sobre cómo las comunas con mayor crecimiento en este sector suelen ser también aquellas con un perfil socioeconómico más elevado, lo cual puede atraer tanto nuevos residentes como un mayor dinamismo comercial.
-        </p>
-    </section>
+    <body>
+        <header>
+            <div id="menu-lateral" class="menu-lateral">
+                <script src="./static/menu.js"></script>
+                <span class="close-btn" onclick="cerrarMenu()">&times;</span>
+                <a href="#introduccion">Inicio</a>
+                <a href="#noticia1">Un problema en aumento</a>
+                <a href="#noticia2">Todos necesitan un corte</a>
+                <a href="#noticia3">Entre navajas y sombras</a>
+                <a href="#noticia4">¿Son estas barberías refugios de actividades ilícitas?</a>
+            </div>
+            
+            <span id="btn-menu" style="font-size:24px; cursor:pointer; position: fixed; top: 10px; left: 10px; z-index: 2000;" onclick="abrirMenu()">&#9776;</span>
 
-    <section class="visualization">
-        <h2>Relación entre Cantidad de Barberías y Criminalidad (2019-2022)</h2>
-        <img src="relacion_barberias_criminalidad.jpg" alt="Relación entre Cantidad de Barberías y Criminalidad (2019-2022)">
-        <p>
-            Finalmente, exploramos la posible relación entre la cantidad de barberías y el nivel de criminalidad en las distintas comunas de Santiago. Utilizamos gráficos de dispersión para investigar si existe una correlación entre el aumento de estos negocios y el comportamiento de la criminalidad. 
-        </p>
-        <p>
-            Este análisis nos permitió observar que, si bien existen comunas donde la expansión de las barberías y el incremento de la criminalidad podrían estar vinculados, en otras parece no haber relación directa. Este tipo de análisis invita a una lectura crítica, donde más que afirmar conexiones absolutas, buscamos entender la complejidad detrás de la dinámica de desarrollo económico y seguridad en Santiago.
-        </p>
-    </section>
+            <div class="titulo" id="titulo">
+                <h1>
+                    Barberías y Criminalidad:<br>
+                </h1>
+            </div>  
+            <div class="subtitulo" id="subtitulo">
+                <h1>Entre navajas y sombras</h1>
+            </div>
+            <div class="logo" id="logo">
+                <img class="centro" id="logobarberia" src="https://zurebarber.com/wp-content/uploads/2022/12/barber-pole-preloader-500.gif">
+            </div> 
+            <div class="stgopic" id="stgopic">
+                <center><img class="stgo" src="./static/Stgo.jpg" alt="stgo"></center>
+            </div>
+            <div class="piedefoto" id="piedefoto">
+                <div class="item">
+                    <p> 
+                        A lo largo de los años se ha evidenciado un aumento delictivo en las distintas comunas de la Región Metropolitana y de la mano a esto un aumento del número de peluquerías que, refleja una curiosa correlación.
+                    </p>
+                </div>
+            </div>
+            
+        </header>
 
-    <footer>
-        <h2>Conclusión</h2>
-        <p>
-            En conclusión, el crecimiento de las barberías y su relación con la criminalidad y densidad poblacional en las comunas de Santiago es un fenómeno multifacético. Las comunas que han registrado un mayor crecimiento en la cantidad de barberías presentan perfiles diversos en cuanto a seguridad y densidad, lo cual nos lleva a concluir que, aunque pueda haber ciertos patrones, la relación entre crecimiento económico y criminalidad depende de una compleja interacción de factores sociales, culturales y económicos. Este reportaje busca proporcionar un enfoque integral para comprender cómo el crecimiento de un sector aparentemente inofensivo, como el de las barberías, podría ser un indicador de cambios más profundos en la dinámica urbana de la ciudad.
-        </p>
-    </footer>
-</body>
+        <div class="container">
+            <div class="introduccion" id="introduccion">
+                <div id="article-title" class="container">
+                    <center>
+                        <h1>"Las zonas - comunas - que han tenido un aumento de barberías, también han aumentado su índice delictual"</h1>
+                        <h3>¿Esto tendrá relación? </h3>
+                    </center>
+                </div>
+                <div class="item">
+                    <p>
+                        Recopilamos distintos datos para poder indagar si ambos factores tienen que ver entre sí. Basándonos en la densidad poblacional, cantidad de casos poblacionales y número de peluquerías en las comunas, llegamos a las tres comunas que más destacan en la relación del aumento de estos números: Santiago, Puente Alto y Maipú. 
+                    </p>
+                    <p>
+                        Pero, si observamos con mayor detenimiento, nos aparece Providencia. Esta comuna es conocida por su alta calidad de vida, modernidad, centro residencial y con excelente conectividad. Curioso que haya una correlación entre el aumento delictual y número de barberías.
+                    </p>
+                    <p>
+                        Investigando en medios de comunicaciones, denuncias y distintas noticias, encontramos distintas situaciones de cierres de barberías por lavado de activos e incluso distintas detenciones de civiles involucrados en los hechos delictivos. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="noticia1" id="noticia1">
+                <div class="imgCrimen" id="imgCrimen">
+                    <center><img src=".\static\2UNPROBLEMAENAUMENTO.jpg"></center>
+                </div>
+                <div id="article-title" class="container">
+                    <h2>UN PROBLEMA EN AUMENTO</h2>
+                </div>
+                <div class="item">
+                    <div id="graph_html1">
+                        <!-- Grafico1 -->
+                        <iframe src=".\static\Grafico1.html" width="100%" height="600" style="border:none;"></iframe>
+                    </div>
+                    <p>
+                        Era 2020 y, aunque la Región Metropolitana gozaba de relativa calma, un susurro sombrío comenzaba a hacerse notar: la criminalidad. En 2021, el problema se intensificó. Santiago fue la primera comuna en registrar un alza significativa en delitos, seguida por Maipú y Cordillera. Para 2023, la situación había escalado a niveles alarmantes. 
+                    </p>
+                    <p>
+                        En 2024, Santiago se consolidó como el epicentro delictual. Este panorama planteó nuevas interrogantes: ¿eran las barberías puntos de encuentro para actividades criminales? ¿O simplemente una pieza más en un entramado social más complejo? 
+                    </p>
+                    <p >
+                        <a href="https://www.ex-ante.cl/ola-de-homicidios-fiscalia-registro-incremento-de-54-en-la-zona-sur-de-santiago-durante-2024/">Click aquí para ver noticia</a>.
+                    </p>
+                </div>
+            </div>
+                
+            <div class="noticia2" id="noticia2">
+                <div class="imgCorte" id="imgCorte">
+                    <center><img src=".\static\3TODOSNECESITANUNCORTE.png" width="700px" height="500px"></center>
+                </div>
+                <div id="article-title" class="container">
+                    <h2>Todos necesitan un corte</h2>
+                </div>
+                <div class="item">
+                    <div id="graph_html2">
+                        <!-- Grafico2 -->
+                        <iframe src=".\static\Grafico2.html" width="100%" height="650" style="border:none;"></iframe>
+                    </div>
+                    <p>
+                        A la par de Criminalidad, Peluquerías y otros tratamientos de belleza vivieron un auge significativo entre 2019 y 2022. Esto reflejó un cambio en la dinámica urbana y la estética personal. Las Condes fue el mayor afectado ante este nuevo integrante en aumento, allí crecieron en un 45% el número de establecimientos. 
+                    </p>
+                    <p>
+                        En paralelo al auge de la criminalidad, las peluquerías y centros de belleza experimentaron un crecimiento explosivo entre 2019 y 2022. Las Condes lideró este fenómeno con un aumento del 45% en nuevos establecimientos. Providencia y Santiago no se quedaron atrás, convirtiéndose en epicentros de esta transformación urbana y estética. 
+                    </p>
+                    <p>
+                        Este auge, impulsado por una población que busca combinar modernidad y tradición, también se reflejó en comunas como Puente Alto. Allí, las peluquerías se han consolidado como espacios accesibles para diversos contextos socioeconómicos, convirtiéndose en centros comunitarios que reflejan la evolución cultural de las ciudades. 
+                    </p>
+                    <p>
+                        Pero más allá de los cortes y los tratamientos de belleza, surgen inquietudes. Algunas de estas barberías operan como simples fachadas para encubrir actividades ilícitas. ¿Qué esconden detrás de sus puertas? 
+                    </p>
+                    <p>
+                        Por otro lado, Puente Alto, tiene un crecimiento moderado, permite destacar que Peluquerías y otros tratamientos de belleza tienen una accesibilidad a la experiencia en diferentes contextos socioeconómicos.  
+                    </p>
+                </div>
+            </div>
+
+            <div class="noticia3" id="noticia3">
+                <div class="imgNavajas" id="imgNavajas">
+                    <center><img src=".\static\4ENTRENAVAJASYSOMBRAS.png"></center>
+                </div>
+                <div id="article-title" class="container">
+                    <h2>Entre navajas y sombras</h2>
+                    </div>
+                <div class="item">
+                    <div id="graph_html3">
+                        <!-- Grafico2 -->
+                        <iframe src=".\static\Grafico3.html" width="100%" height="650" style="border:none;"></iframe>
+                    </div>
+                    <p>
+                        El crecimiento de las barberías y la criminalidad en comunas como Santiago, Puente Alto y Providencia plantea preguntas complejas. Datos del Centro de Estudios y Análisis del Delito (CEAD) y de la Biblioteca del Congreso Nacional de Chile (BCN) confirman que estas tres comunas son las más afectadas por esta combinación. 
+                    </p>
+                    <p>
+                        La alta presencia de Criminalidad ha hecho que la normalidad en las comunas cambie. Santiago solía ser tranquilo, un lugar característico del país que brindaba cultura en sus visitas, ahora sus visitas deben ser precavidas, atentos a sus pertenencias. Puente Alto es la comuna más poblada del país y su ubicación permite mezclar sectores urbanos con la civilización, núcleo comercial donde hoy en día ocurre lo mismo que con Santiago: hay que tener cuidado en su visita.  
+                    </p>
+                    <p>
+                        Con Providencia ocurre algo inesperado, asoma desde las penumbras con altas cifras de ambas situaciones, siendo comúnmente conocida como una comuna con altos costos en sus servicios y se cree que mantiene una baja taza de delincuencia, pero los datos la posicionan dentro de los tres que más relacionan Criminalidad con Peluquerías y otros tratamientos de belleza.
+                    </p>
+                    <p>
+                        Estas relaciones de las cifras llevan a distintas inquietudes sobre las dinámicas económicas y sociales que hay detrás de la seguridad pública. 
+                    </p>          
+                </div>
+            </div>
+
+            <div class="noticia4" id="noticia4">
+                <div class="imgRefugio" id="imgRefugio">
+                    <center><img src=".\static\5¿SONESTASBARBERIASREFUGIOSDEACTIVIDADESILICITAS.jpg"></center>
+                </div>
+                <div id="article-title" class="container">
+                    <h2>¿Son estas barberías refugios de actividades ilícitas?</h2>
+                </div>
+                <div class="item">
+                    <p>
+                        Algunas investigaciones sugieren que estos locales, en apariencia inofensivos, son utilizados para blanquear dinero sucio. La Fiscalía Nacional y unidades especializadas como la ECOH han comenzado a desmantelar estas “narcofachadas”, evidenciando el rol de estos negocios en redes delictuales. 
+                    </p>
+                    <p>
+                        Aunque muchas barberías operan de manera legítima, el aumento de establecimientos y las prácticas sospechosas han despertado alarma. Entre peines y navajas, se libra una batalla por la confianza pública y la seguridad ciudadana. El reto ahora es recuperar la tranquilidad en las calles mientras se desmantelan estas redes ocultas bajo fachadas aparentemente normales. 
+                    </p>
+                    <p>
+                        Los gráficos, basados en datos de la Subsecretaría de Economía, comparan la evolución de los casos policiales y el número de barberías en Puente Alto, Santiago y Providencia entre 2019 y 2022. Las barras amarillas representan los casos policiales, mientras que las líneas marrones reflejan la cantidad de barberías, con escalas ajustadas para facilitar la comparación. 
+                    </p>
+                    <p>
+                        En todas las comunas, se observa una disminución significativa de casos policiales en 2020, posiblemente asociada a las restricciones de movilidad durante la pandemia, seguida de una estabilización en los años posteriores. En contraste, las barberías muestran un crecimiento sostenido durante el mismo período, lo que podría indicar su resiliencia económica y su consolidación como espacios de interacción social y cultural. 
+                    </p>
+                    <p>
+                        Estas tendencias sugieren que, mientras los casos policiales podrían estar influenciados por factores externos como la pandemia, el aumento de barberías refleja dinámicas económicas y culturales más profundas en cada comuna, destacando su rol en la transformación del paisaje urbano. 
+                    </p>
+                    <div class="accordion">
+                        <script src="./static/acordeon.js"></script>
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Gráfico de Santiago
+                            </button>
+                            <div class="accordion-content">
+                                <iframe src=".\static\Grafico_Santiago.html" width="100%" height="750" style="border:none;"></iframe>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Gráfico de Puente Alto
+                            </button>
+                            <div class="accordion-content">
+                                <iframe src=".\static\Grafico_PuenteAlto.html" width="100%" height="750" style="border:none;"></iframe>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Gráfico de Providencia
+                            </button>
+                            <div class="accordion-content">
+                                <iframe src=".\static\Grafico_Providencia.html" width="100%" height="750" style="border:none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Las calles de la Región Metropolitana esconden historias que desafían la normalidad. Entre barberías y talleres mecánicos, surgen las “narcofachadas”: negocios que ocultan redes de dinero sucio bajo una aparente legalidad. 
+                    </p>
+                    <p>
+                        Aunque muchas barberías son legítimas, el crecimiento desmedido y prácticas sospechosas han encendido alarmas. Estas fachadas encubren actividades como tráfico de drogas y compra ilegal de propiedades. 
+                    </p>
+                    <p>
+                        El panorama deja una interrogante abierta sobre el impacto real de estas operaciones y cómo seguirá evolucionando esta compleja situación en las calles de la capital. 
+                    </p>
+                </div>
+            </div>        
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Referencias</h3>
+                <ul>
+                    <li><a href="https://www.ex-ante.cl/ola-de-homicidios-fiscalia-registro-incremento-de-54-en-la-zona-sur-de-santiago-durante-2024/" target="_blank">Ex-Ante: Ola de homicidios en la zona sur de Santiago</a></li>
+                    <li><a href="https://www.emol.com/noticias/Nacional/2024/04/21/1128519/barberias-abiertas-2023-cifras.html" target="_blank">Emol: Barberías abiertas en 2023</a></li>
+                    <li><a href="https://www.emol.com/noticias/Nacional/2024/04/09/1127190/barberias-chile-negocio-lavado-activos.html" target="_blank">Emol: Barberías y lavado de activos</a></li>
+                    <li><a href="https://litoralpress.cl/sitio/Prensa_Texto?LPKey=S5YL66FFT7CRB5LENYA4OHTBDLBHDISIWVOZFTM22QK27FQ65BIA" target="_blank">LitoralPress: Reporte de barberías</a></li>
+                    <li><a href="https://datos.gob.cl/dataset/registro-de-empresas-y-sociedades/resource/42ee8c8c-59cf-42e4-89af-ec19a87dbf8d" target="_blank">Datos.gob.cl: Registro de empresas</a></li>
+                    <li><a href="https://www.sii.cl/sobre_el_sii/estadisticas_de_empresas.html" target="_blank">SII: Estadísticas de empresas</a></li>
+                    <li><a href="https://www.bcn.cl/siit/nuestropais/nuestropais/region13/" target="_blank">Biblioteca del Congreso Nacional: Región Metropolitana</a></li>
+                    <li><a href="https://cead.spd.gov.cl/estadisticas-delictuales/" target="_blank">CEAD: Estadísticas delictuales</a></li>
+                    <li><a href="https://www.latercera.com/la-tercera-sabado/noticia/narcofachadas-la-ofensiva-de-la-fiscalia-ante-la-expansion-del-crimen-organizado/6MGWNVS2MREUPM6HCGKHZP7SBA/" target="_blank">La Tercera: Narcofachadas y crimen organizado</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <center><p>&copy; 2024 Barberías y Criminalidad | Cecilia Vidal, Daniel Gaete y Vicente Lueiza | Diseñado con estilo y datos</p></center>
+            </div>
+            <div class="footer-content">
+                <ul>
+                    <li>Narración Gráfica de No Ficción 2024 segundo semestre COM 208-2</li>
+                <li><a href="https://github.com/cecivugarte/Repo_Barber-a_Equipo0" target="_blank">GitHub</a></li>
+                </ul>
+                
+            </div>
+
+        </footer> 
+    </body>
 </html>
